@@ -1,0 +1,7 @@
+.container {
+  border-radius: rem(6px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: var(--mantine-shadow-sm);
+  background-color: var(--mantine-color-body);
+  padding: 1rem;
+}

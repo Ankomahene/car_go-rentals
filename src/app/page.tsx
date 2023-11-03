@@ -1,3 +1,4 @@
+import { Landing } from '@/features/Landing';
 import styles from './page.module.css';
 
 import { Button } from '@mantine/core';
@@ -5,8 +6,7 @@ import { Button } from '@mantine/core';
 export default function Home() {
   return (
     <main>
-      Hello Next.js 14
-      <Button className={styles.btn}>Click Me!</Button>
+      <Landing />
     </main>
   );
 }

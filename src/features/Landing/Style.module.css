@@ -1,0 +1,12 @@
+.hero {
+  background-color: rgba(253, 126, 20, 0.65);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      65deg,
+      rgba(194, 37, 92, 0.55),
+      rgba(253, 126, 20, 0.65)
+    ),
+    url('https://images.pexels.com/photos/3629227/pexels-photo-3629227.jpeg');
+}
