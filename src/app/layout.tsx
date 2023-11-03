@@ -4,6 +4,7 @@ import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import '@mantine/dates/styles.css';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import { Navbar } from '@/components/Navbar';
 
 export const metadata: Metadata = {
   title: 'Car Go Rentals',
@@ -22,7 +23,10 @@ export default function RootLayout({
       </head>
 
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <Navbar />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
