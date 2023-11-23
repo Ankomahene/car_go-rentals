@@ -1,7 +1,12 @@
+import { Verified } from '@/features/Auth/Verified';
 import React from 'react';
 
 const VerifiedPage = () => {
-  return <>Account is Verified</>;
+  return (
+    <>
+      <Verified />
+    </>
+  );
 };
 
 export default VerifiedPage;

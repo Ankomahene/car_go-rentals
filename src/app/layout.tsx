@@ -5,6 +5,8 @@ import '@mantine/carousel/styles.css';
 import '@mantine/dates/styles.css';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Navbar } from '@/components/Navbar';
+import { UserSessionContextProvider } from '@/context/UserSessionContext';
+import { ToastContainer } from 'react-toastify';
 
 export const metadata: Metadata = {
   title: 'Car Go Rentals',
@@ -24,8 +26,11 @@ export default function RootLayout({
 
       <body>
         <MantineProvider>
-          <Navbar />
-          {children}
+          <UserSessionContextProvider>
+            <Navbar />
+            {children}
+            <ToastContainer />
+          </UserSessionContextProvider>
         </MantineProvider>
       </body>
     </html>
