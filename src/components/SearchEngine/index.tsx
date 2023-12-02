@@ -9,7 +9,7 @@ import { SelectDate } from '../SelectDate';
 
 export const SearchEngine = () => {
   return (
-    <Container className={classes.container}>
+    <Container className={classes.container} size="100%">
       <Flex
         direction={{ base: 'column', sm: 'row' }}
         justify="center"
